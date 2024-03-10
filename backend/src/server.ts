@@ -6,7 +6,10 @@ import path from 'path';
 import { router } from "./routes";
 
 const app = express();
+
 app.use(express.json());
+
+app.use(cors());
 
 app.use(router);
 
